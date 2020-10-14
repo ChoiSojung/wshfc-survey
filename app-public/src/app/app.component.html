@@ -1,2 +1,25 @@
-<h1>Survey</h1><survey [json]="json"></survey>
+<!-- <h1>Survey</h1><survey [json]="json"></survey> -->
 <!-- <h1>SurveyJS Creator</h1><survey-creator></survey-creator> -->
+
+  
+<p>
+  <mat-toolbar color="primary">
+    <h1>{{ title }}</h1>
+    <div>
+      <a mat-button [routerLink]="''">Home</a>
+      <a mat-button [routerLink]="''">Survey</a>
+    </div>
+    <span class="example-spacer"></span>
+    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+      <mat-icon>favorite</mat-icon>
+    </button>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+      <mat-icon>share</mat-icon>
+    </button>
+  </mat-toolbar>
+  <router-outlet></router-outlet>
+</p>
+
+  
+  
+  
